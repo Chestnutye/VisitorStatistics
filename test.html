@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+</head>
+
+<body>
+    <h1>This is a test page</h1>
+    <p>Visiting this page should trigger a stat collection.</p>
+
+</body>
+<footer>
+    <p>Copyright © 2025 Your Company. All rights reserved.</p>
+    <script>
+        // 延迟加载统计脚本，确保不影响首屏性能
+        window.addEventListener('load', () => {
+            // 使用 requestIdleCallback 在浏览器空闲时加载，如果不支持则使用 setTimeout
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(() => {
+                    loadTracker();
+                }, { timeout: 2000 });
+            } else {
+                setTimeout(loadTracker, 1000);
+            }
+        });
+
+        function loadTracker() {
+            const script = document.createElement('script');
+            script.src = 'your-domain.com/tracker.js';// CHANGE THIS to your actual domain/path
+            script.async = true;
+            script.defer = true;
+            document.body.appendChild(script);
+        }
+    </script>
+</footer>
+
+</html>
