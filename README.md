@@ -58,7 +58,7 @@
     ?>
     ```
     > **Note**: You need a free token from [ipinfo.io](https://ipinfo.io) to enable Geolocation features.
-    ```
+   
 3.  **Configure Tracker Endpoint**:
     Open `tracker.js` and edit line 3 to point to your `collect.php` URL:
     ```javascript
