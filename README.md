@@ -79,7 +79,29 @@ Add the tracking script to the `<head>` or `<body>` of any page you want to trac
 > ```javascript
 > var endpoint = 'https://your-domain.com/analytics/collect.php';
 > ```
+### 4. Advanced Usage (Lazy Loading)
+To avoid affecting your page's initial load time, you can lazy-load the tracker. See `test.html` for a complete example:
 
+```html
+<script>
+    window.addEventListener('load', () => {
+        // Load when browser is idle
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => { loadTracker(); }, { timeout: 2000 });
+        } else {
+            setTimeout(loadTracker, 1000);
+        }
+    });
+
+    function loadTracker() {
+        const script = document.createElement('script');
+        script.src = 'https://your-domain.com/analytics/tracker.js'; // Update this URL
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+    }
+</script>
+```
 ## 🖥️ Dashboard
 
 Access the dashboard by navigating to `index.php`.
