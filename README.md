@@ -13,9 +13,7 @@
 
 ## 📖 Overview
 
-**Visitor Statistics** is a **simple** analytics solution designed for developers who want to own their data without the bloat. It is built to be **extremely lightweight** (< 3KB tracker) and easy to deploy.
-
-It features a responsive dashboard built with **Chart.js** that visualizes traffic trends, device breakdowns, and detailed visitor logs in real-time.
+**Visitor Statistics** is a **simple** analytics solution. It features a responsive dashboard built with **Chart.js** that visualizes traffic trends, device breakdowns, and detailed visitor logs in real-time.
 
 ## ✨ Key Features
 
@@ -25,10 +23,6 @@ It features a responsive dashboard built with **Chart.js** that visualizes traff
   - **Software**: Identifies OS (Windows, macOS, iOS, Android), Browser, and specific Device Models.
 - **🌍 Geolocation**: Automatically resolves IP addresses to Country, City, Region, and ISP using `ipinfo.io`.
 - **🔒 Privacy-First**: Uses `localStorage` for visitor identification instead of invasive cookies.
-- **📊 Interactive Dashboard**:
-  - **Traffic Trends**: 24-hour traffic volume visualization.
-  - **Demographics**: Pie charts for Device and OS distribution.
-  - **Top Content**: Most visited pages and top referrers.
 - **⚡ Lightweight**: The client-side `tracker.js` is optimized for performance and zero dependencies.
 
 ## 🛠️ Tech Stack
