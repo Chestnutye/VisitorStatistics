@@ -42,7 +42,7 @@
 ### 2. Setup
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/Chestnutye/visitor-statistics.git
+    git clone https://github.com/Chestnutye/VisitorStatistics.git
     ```
 2.  **Configure Database**:
     Edit `config.php` with your database credentials:
