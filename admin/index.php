@@ -295,7 +295,7 @@ try {
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" style="margin-bottom: 30px;">
                 <h3>Traffic (Last 24 Hours)</h3>
                 <div class="chart-container">
                     <canvas id="trafficChart"></canvas>
