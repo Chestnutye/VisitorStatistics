@@ -265,8 +265,7 @@ try {
                 <div style="font-size: 0.9rem; color: var(--text-secondary);">
                     <?php echo date('Y-m-d H:i'); ?>
                 </div>
-                <a href="auth.php?logout=1"
-                    style="color: var(--accent); text-decoration: none; font-size: 0.9rem;">Logout</a>
+                <a href="?logout=1" style="color: var(--accent); text-decoration: none; font-size: 0.9rem;">Logout</a>
             </div>
         </header>
 
